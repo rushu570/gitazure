@@ -1,0 +1,19 @@
+<HTML>
+<HEAD>  
+<TITLE> Using document.write </TITLE>
+<SCRIPT TYPE="text/javascript">
+	var value;
+	document.writeln( "<H1>Random Numbers</H1>" ,
+	   "<TABLE BORDER = '1' WIDTH = '50%'><TR>" );
+	for ( var i = 1; i <= 20; i++ ) { 
+           value = Math.floor( 1 + Math.random() * 6 );
+ 	   document.writeln( "<TD>", value, "</TD>" );
+	    if ( i % 5 == 0)
+	    document.writeln( "</TR><TR>" );    
+	}
+	document.writeln( "</TR></TABLE>" );
+</SCRIPT>
+</HEAD>
+<BODY>
+</BODY>
+</HTML>
